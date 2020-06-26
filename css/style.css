@@ -1,0 +1,150 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0px;
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+/* Global */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button1{
+    height: 38px;
+    background-color: skyblue;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.button1:hover{
+    color: slateblue;
+}
+/* Gloabl */
+
+header{
+    background-color: #105783;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: skyblue 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+    color: white;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header a:hover{
+    color: lightsalmon;
+    font-weight: bold;
+}
+
+/* Showcase */
+#showcase{
+    min-height: 500px;
+    background: url('../img/eng_background.jpg') no-repeat fixed;
+    text-align: center;
+    opacity: 80%;
+    color: white;
+}
+
+#showcase h1{
+    margin-top: 200px;
+    margin-left: 400px;
+    font-size: 50px;
+}
+
+#showcase p{
+
+}
+
+/* Member Request */
+#member_request{
+    padding: 15px;
+    color: white;
+    background-color: #105783;
+    border-top: skyblue 3px solid;
+    border-bottom: skyblue 3px solid;
+}
+
+#member_request h1{
+    float: left;
+}
+
+#member_request form{
+    float: right;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+#member_request input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 200px;
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+footer{
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    background-color: skyblue;
+    text-align: center;
+}
+
+
+
+
