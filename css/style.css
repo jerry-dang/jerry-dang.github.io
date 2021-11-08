@@ -1,23 +1,84 @@
-.navigation-bar {
-    width: 100%;  /* i'm assuming full width */
-    height: 80px; /* change it to desired width */
-    background-color: white; /* change to desired color */
+body{
+    font-family: 'Harmattan', sans-serif;
+    margin: 0px;
+    background: white;
+    font-weight: 400;
 }
-.logo {
+
+header{
+    background :white;
+    border-bottom: black 3px solid;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav li{
     display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    margin-top: 15px;    /* if you want it vertically middle of the navbar. */
+    margin-left: 300px;
+    padding-top: 35px;
+
+    position: relative;
 }
-.navigation-bar > a {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    height: 80px;        /* if you want it to take the full height of the bar */
-    line-height: 80px;    /* if you want it vertically middle of the navbar */
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    opacity: 60%;
 }
+
+nav a:hover{
+    color: red;
+}
+
+header::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+nav a::before{
+    content:'';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+    width: 0px; 
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+
+}
+
+.logo{
+    float: left;
+    width: 100px;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 /* body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
