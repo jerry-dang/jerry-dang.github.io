@@ -1,14 +1,14 @@
-body{
+/* body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     padding: 0px;
     margin: 0px;
     background-color: white;
-}
+} */
 
 /* Global */
-ul{
+/* ul{
     margin: 0;
     padding: 0;
 }
@@ -31,18 +31,18 @@ ul{
 
 .button1:hover{
     color: slateblue;
-}
+} */
 /* Global */
 
-header{
-    background-color: #105783;
+/* header{
+    background-color: white;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: skyblue 3px solid;
+    border-bottom: black 3px solid;
 }
 
 header a{
-    color: white;
+    color: black;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -75,10 +75,10 @@ header nav{
 header a:hover{
     color: lightsalmon;
     font-weight: bold;
-}
+} */
 
 /* Showcase */
-#showcase{
+/* #showcase{
     min-height: 500px;
     background: url('../img/eng_background.jpg') no-repeat fixed;
     text-align: center;
@@ -94,10 +94,10 @@ header a:hover{
 
 #showcase p{
 
-}
+} */
 
 /* Member Request */
-#member_request{
+/* #member_request{
     padding: 15px;
     color: white;
     background-color: #105783;
@@ -119,10 +119,10 @@ header a:hover{
     padding: 4px;
     height: 25px;
     width: 200px;
-}
+} */
 
 /* Boxes */
-#boxes{
+/* #boxes{
     margin-top: 20px;
 }
 
@@ -143,7 +143,7 @@ footer{
     color: white;
     background-color: skyblue;
     text-align: center;
-}
+} */
 
 
 
