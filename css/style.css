@@ -4,7 +4,7 @@ body{
     line-height: 1.5;
     padding: 0px;
     margin: 0px;
-    background-color: aliceblue;
+    background-color: white;
 }
 
 /* Global */
@@ -32,7 +32,7 @@ ul{
 .button1:hover{
     color: slateblue;
 }
-/* Gloabl */
+/* Global */
 
 header{
     background-color: #105783;
