@@ -92,6 +92,17 @@ footer {
     width: 100%;
 }
 
+.photo {
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+    height: 400px;
+    width: 300px;
+    vertical-align: middle;
+}
+
 .fa {
     display: inline-block;
     padding: 20px;
