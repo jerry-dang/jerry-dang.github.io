@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.css">\
     </head>
     <body>
         <div>
@@ -37,11 +37,21 @@
                             </a>
                         </div>
                         <div class="mobile-nav">
-                            <div class="nav-icon">
+                            <div class="nav-icon" id="nav-icon">
                                 <img src="./img/nav-icon.png" alt="menu" class="menu-icon">\
                             </div>
                         </div>
                     </div>
+                    <div class="nav-overlay" id="nav-overlay">
+                        <ul class="nav-overlay-links">
+                            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                            <li><a href="index.html" onclick="toggleMenu()">Experience</a></li>
+                            <li><a href="index.html" onclick="toggleMenu()">Projects</a></li>
+                            <li><a href="index.html" onclick="toggleMenu()">Gallery</a></li>
+                            <li><a href="index.html" onclick="toggleMenu()">Contact</a></li>
+                        </ul>
+                    </div>
+                    <script src="./js/index.js"></script>
                 </div>
             </section>
             <section class="section" id="home">
