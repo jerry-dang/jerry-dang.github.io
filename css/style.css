@@ -249,6 +249,35 @@ body {
     filter: brightness(1.2);
 }
 
+.body-section-container {
+    padding-top: 1rem;
+    max-width: 1500px;
+    height: 1200px;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.experience-content {
+    color: white;
+    font-size: larger;
+}
+
+.projects-content {
+    color: white;
+    font-size: larger;
+}
+
+.gallery-content {
+    color: white;
+    font-size: larger;
+}
+
+.contact-content {
+    color: white;
+    font-size: larger;
+}
 
 @media (min-width: 1280px) {
     .nav-bar {
