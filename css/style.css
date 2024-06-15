@@ -399,6 +399,95 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-icons-linux {
+    width: 250px;
+    height: 250px;
+    background-color: #3D4043;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    --offset: 4px;
+}
+
+.projects-icons::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140%;
+    background: linear-gradient(#F4A734, #7DD6FA);
+    animation: rotate 1.5s ease-in-out infinite;
+}
+
+.projects-icons-linux::before {
+    content: '';
+    background: conic-gradient(transparent 270deg,
+    white, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -60%);
+    aspect-ratio: 1;
+    width: 100%;
+    animation: rotate 1s forwards infinite;
+}
+
+.projects-icons-linux::after {
+    content: '';
+    background: inherit;
+    border-radius: inherit;
+    position: absolute;
+    inset: var(--offset);
+    height: calc(100% - 2 * var(--offset));
+    width: calc(100% - 2 * var(--offset));
+}
+
+.projects-icons::after {
+    content: '';
+    position: absolute;
+    background: #3D4043;
+    inset: 2px;
+    border-radius: 50px ;
+    
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* @keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) scale(1.4) rotate 
+(0turn);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.4) rotate 
+(1turn);
+    }
+} */
+
+.projects-icons:hover {
+    transform: scale(1.1) translateY(-5px) translateX(-5px);
+    filter: brightness(1.2);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+.projects-icons-linux:hover {
+    transform: scale(1.1) translateY(-5px) translateX(-5px);
+    filter: brightness(1.2);
+    border: 1px solid rgb(255, 255, 255, 0.3);
 }
 
 .projects-icons-text {
@@ -406,6 +495,7 @@ body {
     letter-spacing: 1.1px;
     font-size: 18px;
     font-weight: 500;
+    z-index: 2;
 }
 
 .project-content-section-container {
@@ -480,9 +570,29 @@ body {
 
 .project-content-skills-text2 {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 550;
     letter-spacing: 1.05px;
+}
+
+.project-content-skills-item-react-native {
+    width: 145px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content-skills-item-typescript {
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-content-links {
