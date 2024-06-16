@@ -401,6 +401,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    transition: transform 0.5s ease, filter 0.5s ease, background-image 0.5s ease;
 }
 
 .projects-icons-linux {
@@ -451,10 +452,9 @@ body {
 .projects-icons::after {
     content: '';
     position: absolute;
-    background: #3D4043;
+    background-color: inherit;
     inset: 2px;
     border-radius: 50px ;
-    
 }
 
 @keyframes rotate {
@@ -480,8 +480,17 @@ body {
 
 .projects-icons:hover {
     transform: scale(1.1) translateY(-5px) translateX(-5px);
-    filter: brightness(1.2);
+    filter: brightness(0.8);
     border: 1px solid rgb(255, 255, 255, 0.3);
+    background-image: url('../img/LOGO.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.project-icons p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .projects-icons-linux:hover {
@@ -568,11 +577,21 @@ body {
     align-items: center;
 }
 
+.project-content-skills-item:hover {
+    background-color: #3D4043;
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
 .project-content-skills-text2 {
     color: white;
     font-size: 15px;
     font-weight: 550;
     letter-spacing: 1.05px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .project-content-skills-item-react-native {
@@ -585,6 +604,12 @@ body {
     align-items: center;
 }
 
+.project-content-skills-item-react-native:hover {
+    background-color: #3D4043;
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
 .project-content-skills-item-typescript {
     width: 120px;
     height: 40px;
@@ -593,6 +618,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project-content-skills-item-typescript:hover {
+    background-color: #3D4043;
+    transform: translateY(-1px);
+    cursor: pointer;
 }
 
 .project-content-links {
