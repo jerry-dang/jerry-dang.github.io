@@ -386,22 +386,315 @@ body {
 .projects-icons-container {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.projects-icons {
-    width: 250px;
-    height: 250px;
-    background-color: #3D4043;
-    border-radius: 50px;
+.projects-icons-fitbook {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(145deg, #F4A734, #7DD6FA);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: linear-gradient(#F4A734, #7DD6FA);
     position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease, filter 0.5s ease, background-image 0.5s ease;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.projects-icons-fitbook:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: linear-gradient(#F4A734, #7DD6FA);
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-fitbook:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: linear-gradient(#F4A734, #7DD6FA);
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-fitbook:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: linear-gradient(#F4A734, #7DD6FA);
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-fitbook:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: linear-gradient(#F4A734, #7DD6FA);
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-fitbook:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/fitbooklogo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-fitbook:hover p {
+    display: none;
+}
+
+.projects-icons-fitbook:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-fitbook:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-fitbook:hover .projects-icons-inner-fitbook:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-fitbook:hover .projects-icons-inner-fitbook:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+}
+
+.projects-icons-chess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(145deg, #7ad090, #707070);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.projects-icons-chess:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-chess:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-chess:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-chess:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-chess:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/chesspiece.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-chess:hover p {
+    display: none;
+}
+
+.projects-icons-chess:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-chess:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-chess:hover .projects-icons-inner-chess:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-chess:hover .projects-icons-inner-chess:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+}
+
+.projects-icons-splitify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(145deg, #B4CDED, #BFCC94);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.projects-icons-splitify:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: linear-gradient(145deg, #B4CDED, #BFCC94);
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-splitify:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: linear-gradient(145deg, #B4CDED, #BFCC94);
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-splitify:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: linear-gradient(145deg, #B4CDED, #BFCC94);
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-splitify:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: linear-gradient(145deg, #B4CDED, #BFCC94);
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-splitify:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/splitifylogo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-splitify:hover p {
+    display: none;
+}
+
+.projects-icons-splitify:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-splitify:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-splitify:hover .projects-icons-inner-splitify:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-splitify:hover .projects-icons-inner-splitify:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
 }
 
 .projects-icons-linux {
@@ -417,14 +710,14 @@ body {
     --offset: 4px;
 }
 
-.projects-icons::before {
+/* .projects-icons::before {
     content: '';
     position: absolute;
     width: 140px;
     height: 140%;
     background: linear-gradient(#F4A734, #7DD6FA);
     animation: rotate 1.5s ease-in-out infinite;
-}
+} */
 
 .projects-icons-linux::before {
     content: '';
@@ -449,13 +742,13 @@ body {
     width: calc(100% - 2 * var(--offset));
 }
 
-.projects-icons::after {
+/* .projects-icons::after {
     content: '';
     position: absolute;
     background-color: inherit;
     inset: 2px;
     border-radius: 50px ;
-}
+} */
 
 @keyframes rotate {
     from {
@@ -464,33 +757,6 @@ body {
     to {
         transform: rotate(360deg);
     }
-}
-
-/* @keyframes rotate {
-    from {
-        transform: translate(-50%, -50%) scale(1.4) rotate 
-(0turn);
-    }
-
-    to {
-        transform: translate(-50%, -50%) scale(1.4) rotate 
-(1turn);
-    }
-} */
-
-.projects-icons:hover {
-    transform: scale(1.1) translateY(-5px) translateX(-5px);
-    filter: brightness(0.8);
-    border: 1px solid rgb(255, 255, 255, 0.3);
-    background-image: url('../img/LOGO.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.project-icons p {
-    color: white;
-    font-size: 20px;
-    font-weight: 500;
 }
 
 .projects-icons-linux:hover {
@@ -504,6 +770,14 @@ body {
     letter-spacing: 1.1px;
     font-size: 18px;
     font-weight: 500;
+    z-index: 2;
+}
+
+.projects-icons-text-splitify {
+    color: #344966;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    font-weight: 600;
     z-index: 2;
 }
 
