@@ -244,6 +244,27 @@ body {
     margin-right: 2rem;
 }
 
+.footer-icon {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    transition: opacity 0.3s;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 250;
+    color: white;
+    opacity: 0.3;
+    margin-left: auto;
+    margin-right: 1.6rem;
+}
+
 .link-icon {
     margin-left: 1rem;
 }
@@ -251,6 +272,10 @@ body {
 .contact-icon:hover {
     transform: scale(1.1) translateY(-5px) translateX(+5px);
     filter: brightness(1.2);
+}
+
+.footer-icon:hover {
+    opacity: 0.4;
 }
 
 .link-icon:hover {
@@ -404,7 +429,7 @@ body {
     color: linear-gradient(#F4A734, #7DD6FA);
     position: relative;
     cursor: pointer;
-    transition: 500ms ease;
+    transition: 1500ms ease;
 }
 
 .projects-icons-fitbook:before {
@@ -506,7 +531,7 @@ body {
     color: white;
     position: relative;
     cursor: pointer;
-    transition: 500ms ease;
+    transition: 1500ms ease;
 }
 
 .projects-icons-chess:before {
@@ -608,7 +633,7 @@ body {
     color: white;
     position: relative;
     cursor: pointer;
-    transition: 500ms ease;
+    transition: 1500ms ease;
 }
 
 .projects-icons-splitify:before {
@@ -710,7 +735,7 @@ body {
     color: white;
     position: relative;
     cursor: pointer;
-    transition: 500ms ease;
+    transition: 1500ms ease;
 }
 
 .projects-icons-linux:before {
@@ -1039,6 +1064,15 @@ a {
     font-size:xx-large;
     font-weight: 550;
     letter-spacing: 1.5px;
+}
+
+.footer-container {
+    border-top: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.footer-content-container {
+    display: flex;
+    flex-direction: row;
 }
 
 @media (min-width: 1280px) {
