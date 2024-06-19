@@ -1039,6 +1039,19 @@ a {
     margin-bottom: 2rem;
 }
 
+.courses-content {
+    color: white;
+    font-size: larger;
+}
+
+.courses-content-title {
+    margin-bottom: 4rem;
+    color: white;
+    font-size:xx-large;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+}
+
 .gallery-content {
     color: white;
     font-size: larger;
@@ -1050,7 +1063,6 @@ a {
     font-size:xx-large;
     font-weight: 550;
     letter-spacing: 1.5px;
-
 }
 
 .contact-content {
