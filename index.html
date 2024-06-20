@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="./css/style.css">
+        <!-- <script type="module" src="./js/index.mjs"></script> -->
     </head>
     <body>
         <div>
@@ -64,8 +65,6 @@
                             <div class="left-side-content-container">
                                 <div class="left-side-content">
                                     <div class="intro-container">
-                                        <!-- <p class="intro-text">Hello There! I'm</p>
-                                        <h1 class="intro-name">Jerry Dang</h1> -->
                                         <p class="intro-text">Hello there! My name is</p>
                                         <p>
                                             <span class="intro-name">Jerry Dang</span>
@@ -143,7 +142,6 @@
                                 <a href="https://www.thescore.com/">
                                     <img src="./img/scorecompany.png" alt="theScore" class="experience-icon">
                                 </a>
-                                <!-- <img src="./img/scorecompany.png">     -->
                             </div>
                         </div>
                         <div class="experience-description-title">
@@ -184,7 +182,6 @@
                                 <a href="https://www.nirix.com/">
                                     <img src="./img/nirixcompany.png" alt="NIRIX Inc." class="experience-icon">
                                 </a>
-                                <!-- <img src="./img/scorecompany.png">     -->
                             </div>
                         </div>
                         <div class="experience-description-title">
@@ -209,121 +206,50 @@
                     </div>
                     <div class="projects-content-container">
                         <div class="projects-icons-container">
-                            <div class="projects-icons-fitbook" id="fitbook-icon">
+                            <div class="projects-icons-fitbook" id="fitbook-icon" data-project="fitbook">
                                 <div class="projects-icons-inner-fitbook">
                                     <p class="projects-icons-text">FitBook</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-chess">
+                            <div class="projects-icons-chess" id="chess-icon" data-project="chess">
                                 <div class="projects-icons-inner-chess"> 
                                     <p class="projects-icons-text">NNC Chess</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-linux">
+                            <div class="projects-icons-linux" id="linux-icon" data-project="linux-monitor">
                                 <div class="projects-icons-inner-linux">
-                                    <p class="projects-icons-text">Linux System</p>
+                                    <p class="projects-icons-text">Linux System Monitor</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-splitify">
+                            <div class="projects-icons-splitify" id="splitify-icon" data-project="splitify">
                                 <div class="projects-icons-inner-splitify"> 
                                     <p class="projects-icons-text-splitify">Splitify App</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-langchain">
+                            <div class="projects-icons-langchain" id="langchain-icon" data-project="langchain">
                                 <div class="projects-icons-inner-langchain">
                                     <p class="projects-icons-text-langchain">Langchain</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-webgallery">
+                            <div class="projects-icons-webgallery" id="webgallery-icon" data-project="webgallery">
                                 <div class="projects-icons-inner-webgallery">
                                     <p class="projects-icons-text-webgallery">Web Gallery</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-PintOS">
+                            <div class="projects-icons-PintOS" id="PintOS-icon" data-project="PintOS">
                                 <div class="projects-icons-inner-PintOS">
                                     <p class="projects-icons-text-PintOS">PintOS</p>
                                 </div>
                             </div>
-                            <div class="projects-icons-website">
+                            <div class="projects-icons-website" id="website-icon" data-project="website">
                                 <div class="projects-icons-inner-website">
                                     <p class="projects-icons-text-website">Personal Website</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="project-content-section-container" id="project-fitbook">
-                        <div class="project-content-title">
-                            <p class="project-content-title-text">
-                                TITLE
-                            </p>
-                            <p class="project-content-title-text2">
-                                Fitbook
-                            </p>
-                        </div>
-                        <div class="project-content-description">
-                            <p class="project-content-description-text">
-                                DESCRIPTION
-                            </p>
-                            <p class="project-content-description-text2">
-                                Fitbook is a mobile app for tracking workouts and self-improvement.
-                            </p>
-                        </div>
-                        <div class="project-content-skills">
-                            <p class="project-content-skills-text">
-                                SKILLS
-                            </p>
-                            <div class="project-content-skills-container">
-                                <div class="project-content-skills-item-react-native">
-                                    <a href="https://reactnative.dev/">
-                                        <p class="project-content-skills-text2">
-                                            React Native
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="project-content-skills-item">
-                                    <a href = "https://expressjs.com/">
-                                        <p class="project-content-skills-text2">
-                                            Express.js
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="project-content-skills-item">
-                                    <a href="https://nodejs.org/en/">
-                                        <p class="project-content-skills-text2">
-                                            Node.js
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="project-content-skills-item">
-                                    <a href="https://www.mongodb.com/">
-                                        <p class="project-content-skills-text2">
-                                            MongoDB
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="project-content-skills-item-typescript">
-                                    <a href="https://www.typescriptlang.org/">
-                                        <p class="project-content-skills-text2">
-                                            Typescript
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content-links">
-                            <p class="project-content-links-text">
-                                LINKS
-                            </p>
-                            <div class="project-content-links-container">
-                                <div class="project-content-links-item">
-                                    <a href="https://github.com/jerry-dang/fitbook">
-                                        <img src="./img/github-icon.png" alt="GitHub" class="link-icon">
-                                    </a>
-                                </div>
-                            </div>
-                        </div> 
-                        <script src="./js/projects.js"></script>
-                    </div>
+                    <div class="project-content-section-container hidden" id="project-content-display"></div>
+                    <script src="./js/projects.js"></script>
                 </div>
             </div>
         </div>
