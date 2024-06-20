@@ -409,20 +409,18 @@ body {
 }
 
 .projects-icons-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    justify-content: center;
 }
 
 .projects-icons-fitbook {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
-    background: #F4A734;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(254, 244, 244);
     opacity: 0.85;
     border: 2px solid #3D4043;
     text-align: center;
@@ -522,9 +520,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
-    background: #718d61;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(200, 200, 200);
     opacity: 0.85;
     border: 2px solid #3D4043;
     text-align: center;
@@ -624,9 +622,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
-    background: #B4CDED;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(153, 152, 152);
     opacity: 0.85;
     border: 2px solid #3D4043;
     text-align: center;
@@ -726,9 +724,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    height: 250px;
-    background: #d3896a;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(172, 172, 172);
     opacity: 0.85;
     border: 2px solid #3D4043;
     text-align: center;
@@ -824,6 +822,446 @@ body {
     -web-kit-transition: 100ms height ease 300ms;
 }
 
+.projects-icons-langchain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(136, 135, 135);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: 1500ms ease;
+}
+
+.projects-icons-langchain:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-langchain:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-langchain:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-langchain:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-langchain:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/langchain.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-langchain:hover p {
+    display: none;
+}
+
+.projects-icons-langchain:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-langchain:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-langchain:hover .projects-icons-inner-langchain:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-langchain:hover .projects-icons-inner-langchain:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+}
+
+.projects-icons-text-langchain {
+    color: white;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.projects-icons-webgallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(113, 113, 113);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: 1500ms ease;
+}
+
+.projects-icons-webgallery:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-webgallery:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-webgallery:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-webgallery:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-webgallery:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/monalisa.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-webgallery:hover p {
+    display: none;
+}
+
+.projects-icons-webgallery:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-webgallery:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-webgallery:hover .projects-icons-inner-webgallery:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-webgallery:hover .projects-icons-inner-webgallery:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+}
+
+.projects-icons-text-webgallery {
+    color: white;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.projects-icons-PintOS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(97, 97, 97);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: 1500ms ease;
+}
+
+.projects-icons-PintOS:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-PintOS:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-PintOS:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-PintOS:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-PintOS:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/pintos.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-PintOS:hover p {
+    display: none;
+}
+
+.projects-icons-PintOS:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-PintOS:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-PintOS:hover .projects-icons-inner-PintOS:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-PintOS:hover .projects-icons-inner-PintOS:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+}
+
+.projects-icons-text-PintOS {
+    color: white;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+
+.projects-icons-website {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 362.5px;
+    height: 180px;
+    background: rgb(81, 81, 81);
+    opacity: 0.85;
+    border: 2px solid #3D4043;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    transition: 1500ms ease;
+}
+
+.projects-icons-website:before {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    top: -2px;
+    left: -2px;
+    transition: 100ms width ease 300ms;
+    -web-kit-transition: 100ms width ease 300ms;
+}
+
+.projects-icons-website:after {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    top: -2px;
+    right: -2px;
+    transition: 100ms height ease 200ms;
+    -web-kit-transition: 100ms height ease 200ms;
+}
+
+.projects-icons-inner-website:after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    content: "";
+    background: white;
+    bottom: -2px;
+    right: -2px;
+    transition: 100ms width ease 100ms;
+    -web-kit-transition: 100ms width ease 100ms;
+}
+
+.projects-icons-inner-website:before {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    content: "";
+    background: white;
+    bottom: -2px;
+    left: -2px;
+    transition: 100ms height ease 0ms;
+    -web-kit-transition: 100ms height ease 0ms;
+}
+
+.projects-icons-website:hover {
+    border-color: transparent;
+    opacity: 1.0;
+    filter: brightness(1.2);
+    background-color: #3D4043;
+    background-image: url('../img/LOGO.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-icons-website:hover p {
+    display: none;
+}
+
+.projects-icons-website:hover:before {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 0ms;
+    -web-kit-transition: 100ms width ease 0ms;
+}
+
+.projects-icons-website:hover:after {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 100ms;
+    -web-kit-transition: 100ms height ease 100ms;
+}
+
+.projects-icons-website:hover .projects-icons-inner-website:after {
+    width: calc(100% + 2px);
+    transition: 100ms width ease 200ms;
+    -web-kit-transition: 100ms width ease 200ms;
+}
+
+.projects-icons-website:hover .projects-icons-inner-website:before {
+    height: calc(100% + 2px);
+    transition: 100ms height ease 300ms;
+    -web-kit-transition: 100ms height ease 300ms;
+}
+
+.projects-icons-text-website {
+    color: white;
+    letter-spacing: 1.1px;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+
 /* .projects-icons-linux {
     width: 250px;
     height: 250px;
@@ -893,7 +1331,7 @@ body {
 } */
 
 .projects-icons-text {
-    color: white;
+    color: #212425;
     letter-spacing: 1.1px;
     font-size: 18px;
     font-weight: 500;
