@@ -292,6 +292,16 @@ body {
     width: 100%;
 }
 
+.body-section-container-footer {
+    padding-top: 1rem;
+    max-width: 1500px;
+    height: 600px;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .experience-content {
     padding: 1rem;
 }
@@ -484,7 +494,7 @@ body {
     filter: brightness(1.2);
     background-color: #3D4043;
     background-image: url('../img/fitbooklogo.png');
-    background-size: cover;
+    background-size: 350px 180px;
     background-position: center;
 }
 
@@ -586,7 +596,7 @@ body {
     filter: brightness(1.2);
     background-color: #3D4043;
     background-image: url('../img/chesspiece.png');
-    background-size: cover;
+    background-size: 360px 180px;
     background-position: center;
 }
 
@@ -790,7 +800,7 @@ body {
     filter: brightness(1.2);
     background-color: #3D4043;
     background-image: url('../img/linuxlogo.png');
-    background-size: cover;
+    background-size: 310px 180px;
     background-position: center;
 }
 
@@ -1002,7 +1012,7 @@ body {
     filter: brightness(1.2);
     background-color: #3D4043;
     background-image: url('../img/monalisa.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -1222,7 +1232,7 @@ body {
     filter: brightness(1.2);
     background-color: #3D4043;
     background-image: url('../img/LOGO.png');
-    background-size: cover;
+    background-size: 330px 150px;
     background-position: center;
 }
 
@@ -1525,6 +1535,59 @@ a {
     font-size:xx-large;
     font-weight: 550;
     letter-spacing: 1.5px;
+}
+
+.contact-section-container {
+    padding: 1rem;
+}
+
+.contact-info {
+    margin-left: 1rem;
+}
+
+.contact-info-title {
+    margin-bottom: 2rem;
+}
+
+.contact-info-title-text {
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+.contact-info-item {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+.contact-info-icon {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    margin-right: 2rem;
+}
+
+.contact-info-icon2 {
+    padding: 0.5rem;
+    margin-bottom: 2.5rem;
+    margin-right: 2rem;
+}
+
+.contact-info-text {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1.1px;
+}
+
+.contact-info-text2 {
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 1.1px;
+    margin-top: 0.8rem;
 }
 
 .footer-container {
