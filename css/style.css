@@ -1486,6 +1486,12 @@ a {
     cursor: pointer;
 }
 
+.project-content-links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
 .project-content-links {
     margin-top: 4rem;
     margin-bottom: 2rem;

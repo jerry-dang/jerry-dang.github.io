@@ -135,6 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             <img src="./img/github-icon.png" alt="GitHub" class="link-icon">
                         </a>
                     </div>
+                    <div class="project-content-links-item">
+                        <a href="https://github.com/ychen5601/langchainjs/tree/test-token-buffer-memory">
+                            <img src="./img/github-icon.png" alt="GitHub" class="link-icon">
+                        </a>
+                    </div>
                 </div>
             </div>
         `,
@@ -209,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     TITLE
                 </p>
                 <p class="project-content-title-text2">
-                    Splitify - App for Splitting Bills
+                    Splitify - App for Splitting Bills <strong>(In-Progress)<strong>
                 </p>
             </div>
             <div class="project-content-description">
@@ -277,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <div class="project-content-links-container">
                     <div class="project-content-links-item">
-                        <a href="https://github.com/jerry-dang/fitbook">
+                        <a href="https://github.com/splitify-app/splitify">
                             <img src="./img/github-icon.png" alt="GitHub" class="link-icon">
                         </a>
                     </div>
