@@ -267,6 +267,7 @@ body {
 
 .link-icon {
     margin-left: 1rem;
+    opacity: 0.8;
 }
 
 .contact-icon:hover {
@@ -286,6 +287,16 @@ body {
     padding-top: 1rem;
     max-width: 1500px;
     height: 1200px;
+    margin-top: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.body-section-container-projects {
+    padding-top: 1rem;
+    max-width: 1500px;
+    height: auto;
     margin-top: 8rem;
     margin-left: auto;
     margin-right: auto;
@@ -1367,9 +1378,34 @@ body {
 .project-content-section-container {
     padding: 1rem;
     max-width: 100%;
-    /* overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word; */
+}
+
+.langchain-text {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.linux-sysmon-item {
+    color: white;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.os-item {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.os-text {
+    color: white;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .project-content-section-container .not-available {
@@ -1431,6 +1467,7 @@ body {
 .project-content-skills-container {
     display: flex;
     flex-direction: row;
+    margin-top: 2rem;
     margin-left: 1rem;
     gap: 3rem;
 }
