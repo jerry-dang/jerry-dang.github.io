@@ -1,5 +1,5 @@
 body {
-    background-color: #212425;
+    background-color: #302E2B;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -135,7 +135,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    background-color: #3D4043;
+    background-color: #52514E;
     border-radius: 50px;
 }
 
@@ -158,7 +158,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #3D4043;
+    color: #52514E;
     background-color: white;
     border-radius: 50px;
 }
@@ -233,7 +233,7 @@ body {
     margin-left: 2.3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #3D4043;
+    background-color: #52514E;
 }
 
 .contact-icon {
@@ -326,7 +326,7 @@ body {
     border: 1px inset rgb(255, 255, 255, 0.3);
     border-radius: 50px;
     padding: 2rem;
-    background-color: #3D4043;
+    background-color: #52514E;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -443,7 +443,7 @@ body {
     height: 180px;
     background: rgb(254, 244, 244);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: linear-gradient(#F4A734, #7DD6FA);
     position: relative;
@@ -504,7 +504,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/fitbooklogo.png');
     background-size: 350px 180px;
     background-position: center;
@@ -546,7 +546,7 @@ body {
     height: 180px;
     background: rgb(200, 200, 200);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -607,7 +607,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/chesspiece.png');
     background-size: 360px 180px;
     background-position: center;
@@ -649,7 +649,7 @@ body {
     height: 180px;
     background: rgb(153, 152, 152);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -710,7 +710,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/splitifylogo.png');
     background-size: cover;
     background-position: center;
@@ -752,7 +752,7 @@ body {
     height: 180px;
     background: rgb(172, 172, 172);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -813,7 +813,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/linuxlogo.png');
     background-size: 310px 180px;
     background-position: center;
@@ -855,7 +855,7 @@ body {
     height: 180px;
     background: rgb(136, 135, 135);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -916,7 +916,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/langchain.png');
     background-size: cover;
     background-position: center;
@@ -966,7 +966,7 @@ body {
     height: 180px;
     background: rgb(113, 113, 113);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -1027,7 +1027,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/monalisa.png');
     background-size: contain;
     background-position: center;
@@ -1077,7 +1077,7 @@ body {
     height: 180px;
     background: rgb(97, 97, 97);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -1138,7 +1138,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/pintos.png');
     background-size: cover;
     background-position: center;
@@ -1188,7 +1188,7 @@ body {
     height: 180px;
     background: rgb(81, 81, 81);
     opacity: 0.85;
-    border: 2px solid #3D4043;
+    border: 2px solid #52514E;
     text-align: center;
     color: white;
     position: relative;
@@ -1249,7 +1249,7 @@ body {
     opacity: 1.0;
     transform: scale(1.0) translateY(-5px) translateX(-5px);
     filter: brightness(1.2);
-    background-color: #3D4043;
+    background-color: #52514E;
     background-image: url('../img/LOGO.png');
     background-size: 330px 150px;
     background-position: center;
@@ -1360,7 +1360,7 @@ body {
 } */
 
 .projects-icons-text {
-    color: #212425;
+    color: #302E2B;
     letter-spacing: 1.1px;
     font-size: 18px;
     font-weight: 500;
@@ -1483,7 +1483,7 @@ body {
 }
 
 .project-content-skills-item:hover {
-    background-color: #3D4043;
+    background-color: #52514E;
     transform: translateY(-1px);
     cursor: pointer;
 }
@@ -1510,7 +1510,7 @@ a {
 }
 
 .project-content-skills-item-react-native:hover {
-    background-color: #3D4043;
+    background-color: #52514E;
     transform: translateY(-1px);
     cursor: pointer;
 }
@@ -1526,7 +1526,7 @@ a {
 }
 
 .project-content-skills-item-typescript:hover {
-    background-color: #3D4043;
+    background-color: #52514E;
     transform: translateY(-1px);
     cursor: pointer;
 }
