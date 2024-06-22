@@ -78,6 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             </p>
                         </a>
                     </div>
+                    <div class="project-content-skills-item">
+                        <a href="https://git-scm.com/">
+                            <p class="project-content-skills-text2">
+                                Git
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="project-content-links">
@@ -427,6 +434,20 @@ document.addEventListener('DOMContentLoaded', () => {
                             </p>
                         </a>
                     </div>
+                    <div class="project-content-skills-item-typescript">
+                        <a href="https://www.docker.com/">
+                            <p class="project-content-skills-text2">
+                                Docker
+                            </p>
+                        </a>
+                    </div>
+                    <div class="project-content-skills-item-typescript">
+                        <a href="https://cloud.google.com/">
+                            <p class="project-content-skills-text2">
+                                GCP
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="project-content-links">
@@ -577,6 +598,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href="https://www.gnu.org/software/make/manual/make.html">
                     <p class="project-content-skills-text2">
                         Makefile
+                    </p>
+                </a>
+            </div>
+            <div class="project-content-skills-item-typescript">
+                <a href="https://www.docker.com/">
+                    <p class="project-content-skills-text2">
+                        Docker
                     </p>
                 </a>
             </div>
