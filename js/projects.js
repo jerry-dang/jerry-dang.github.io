@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const projectIcons = document.querySelectorAll('.projects-icons-container > div');
+
+    projectIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            const projectId = icon.getAttribute('data-project');
+            const projectContentDisplay = document.getElementById('project-content-display')
+
+            projectContentDisplay.classList.add('hidden');
+            projectContentDisplay.innerHTML = projects[projectId] || '<p class="not-available">Content not available :(</p>';
+            projectContentDisplay.classList.remove('hidden');
+        })
+    })
+
     const projects = {
         'fitbook': `
             <div class="project-content-title">
@@ -22,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <p class="project-content-description-text2">
                     The project was realized in a team of <strong>7</strong> students throughout the summer semester of 2023. We had daily standups, 
-                    2 synchronous and 3 asynchornous per week on <strong>Slack</strong> in a <strong>Scrum</strong> software developmenet process. We used <strong>Github</strong> 
+                    2 synchronous and 3 asynchronous per week on <strong>Slack</strong> in a <strong>Scrum</strong> software development process. We used <strong>Github</strong> 
                     for version control and <strong>Jira</strong> for progress and bug tracking for developing features and epics. Additionally, we 
                     also had deadlines to meet since our project was divided into <strong>5 sprints</strong>, each sprint spanning for about 2 weeks, 
                     including mockups, planning, retrospective, and analytical meetings. As for my personal contribution to this project, 
-                    I designed the entire application workflow and prototypes, facilatated the meetings, developed <strong>3 features</strong> as well 
-                    as helped the Scrum master with PR reviews.
+                    I designed the entire application workflow and prototypes, facilatated the meetings, developed <strong>3 features</strong> and
+                     helped the Scrum master with PR reviews.
                 </p>
                 <p class="project-content-description-text2">
                     Furthermore, we also conducted a usability and UI design study that resulted in a <strong>55%</strong> retention 
@@ -35,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     half the time. This prototype was constructed through the help of individual interviews and online surveys that 
                     were conducted prior to the prototype's final version, which yielded mostly positive comments but also constructive 
                     criticism about the app's overall usability. The prototype can be viewed from the YouTube link below as a video 
-                    demonstrating the different transitions between pages.
+                    demonstrating the different transitions between different pages of the application.
                 </p>
             </div>
             <div class="project-content-skills">
@@ -124,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <p class="project-content-description-text2">
                     As a team of 4 members, we successfully finished a Github issues ticket from the langchainjs repository and got it 
-                    merged to the main branch! The ticket consisted of an implementation issue with the conversation token buffer memory 
+                    <strong>merged</strong> to the main branch! The ticket consisted of an implementation issue with the conversation token buffer memory 
                     feature in the js repository. This class keeps a buffer of recent interactions in memory, and uses token length rather 
                     than number of interactions to determine when to flush interactions with an AI chatbot for example. More about this 
                     feature can be learned <a href="https://python.langchain.com/v0.1/docs/modules/memory/types/token_buffer/" class="langchain-text">here</a>.
@@ -291,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </p>
                 <p class="project-content-description-text2">
                     As this project is in-progress, there is no detailed drescription of it yet. However, I am planning on using AWS 
-                    and SQL for the database, Express for the backend, and Flutter for the frontend framework which will be integrated 
+                    and SQL for the database, Express.js for the backend, and Flutter for the frontend framework which will be integrated 
                     with iOS and Android devices. As for the caviat, I want to tap in to the Interac API to provide a smoother experience 
                     when requesting money back from other users and currently also learning about Dart!
                 </p>
@@ -490,7 +503,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="project-content-description-text2">
                 The key points of this project include creating a well-designed REST API that is structured optimally with endpoints 
                 that are accessible to authorized and authenticated users. Additionally, it must be secure from attackers such as SQL 
-                injections, XSS attacks, and Cross-Site Origin Forgery. Most importantly, I focused a lot on the functionality of this 
+                injections, XSS attacks, and Cross-Site Request Forgery. Most importantly, I focused a lot on the functionality of this 
                 application so that it could handle all the edge cases and have a smooth UI for users to look at.
             </p>
         </div>
@@ -695,17 +708,4 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
 `   ,
     };
-
-    const projectIcons = document.querySelectorAll('.projects-icons-container > div');
-
-    projectIcons.forEach(icon => {
-        icon.addEventListener('click', () => {
-            const projectId = icon.getAttribute('data-project');
-            const projectContentDisplay = document.getElementById('project-content-display')
-
-            projectContentDisplay.classList.add('hidden');
-            projectContentDisplay.innerHTML = projects[projectId] || '<p class="not-available">Content not available :(</p>';
-            projectContentDisplay.classList.remove('hidden');
-        })
-    })
 })

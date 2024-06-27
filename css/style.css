@@ -244,6 +244,7 @@ body {
     margin-bottom: 2.5rem;
     margin-left: 2rem;
     margin-right: 2rem;
+    transition: transform 0.3s ease;
 }
 
 .footer-icon {
@@ -273,7 +274,7 @@ body {
 }
 
 .contact-icon:hover {
-    transform: scale(1.1) translateY(-5px) translateX(+5px);
+    transform: scale(1.0) translateY(-3px);
     filter: brightness(1.2);
 }
 
