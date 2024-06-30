@@ -107,8 +107,8 @@ body {
 .left-side-content-container {
     display: flex;
     align-items: flex-end;
-    margin-left: 1rem;
-    /* max-width: 584px; */
+    margin-left: 0.5rem;
+    /* max-width: 750px; */
 }
 
 .left-side-content {
