@@ -1552,6 +1552,19 @@ a {
     margin-bottom: 2rem;
 }
 
+.skills-content {
+    color: white;
+    font-size: larger;
+}
+
+.skills-content-title {
+    margin-bottom: 4rem;
+    color: white;
+    font-size:xx-large;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+}
+
 .courses-content {
     color: white;
     font-size: larger;
