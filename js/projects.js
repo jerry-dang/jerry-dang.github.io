@@ -1,19 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const projectIcons = document.querySelectorAll('.projects-icons-container > div');
+document.addEventListener("DOMContentLoaded", () => {
+  const projectIcons = document.querySelectorAll(
+    ".projects-icons-container > div"
+  );
 
-    projectIcons.forEach(icon => {
-        icon.addEventListener('click', () => {
-            const projectId = icon.getAttribute('data-project');
-            const projectContentDisplay = document.getElementById('project-content-display')
+  projectIcons.forEach((icon) => {
+    icon.addEventListener("click", () => {
+      const projectId = icon.getAttribute("data-project");
+      const projectContentDisplay = document.getElementById(
+        "project-content-display"
+      );
 
-            projectContentDisplay.classList.add('hidden');
-            projectContentDisplay.innerHTML = projects[projectId] || '<p class="not-available">Content not available :(</p>';
-            projectContentDisplay.classList.remove('hidden');
-        })
-    })
+      projectContentDisplay.classList.add("hidden");
+      projectContentDisplay.innerHTML =
+        projects[projectId] ||
+        '<p class="not-available">Content not available :(</p>';
+      projectContentDisplay.classList.remove("hidden");
+    });
+  });
 
-    const projects = {
-        'fitbook': `
+  const projects = {
+    fitbook: `
             <div class="project-content-title">
                 <p class="project-content-title-text">
                     TITLE
@@ -118,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `,
-        'langchain': `
+    langchain: `
             <div class="project-content-title">
                 <p class="project-content-title-text">
                     TITLE
@@ -196,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `,
-        'linux-monitor': `
+    "linux-monitor": `
             <div class="project-content-title">
                 <p class="project-content-title-text">
                     TITLE
@@ -284,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `,
-        'splitify': `
+    splitify: `
             <div class="project-content-title">
                 <p class="project-content-title-text">
                     TITLE
@@ -371,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `,
-        'chess': `
+    chess: `
             <div class="project-content-title">
                 <p class="project-content-title-text">
                     TITLE
@@ -481,7 +487,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `,
-        'webgallery': `
+    webgallery: `
         <div class="project-content-title">
             <p class="project-content-title-text">
                 TITLE
@@ -555,7 +561,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     `,
-    'PintOS': `
+    PintOS: `
     <div class="project-content-title">
         <p class="project-content-title-text">
             TITLE
@@ -635,8 +641,8 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
-`   ,
-    'website': `
+`,
+    website: `
     <div class="project-content-title">
         <p class="project-content-title-text">
             TITLE
@@ -706,6 +712,6 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
-`   ,
-    };
-})
+`,
+  };
+});
