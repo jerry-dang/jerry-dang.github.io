@@ -1678,6 +1678,7 @@ a {
   font-size: 1.5rem;
   opacity: 0.5;
   transition: opacity 0.5s ease-in;
+  width: fit-content;
 }
 
 .course-description {
@@ -1687,7 +1688,7 @@ a {
   margin-bottom: 2rem;
 }
 
-.course:hover .course-title {
+.course-title:hover {
   opacity: 1;
 }
 
@@ -1768,7 +1769,17 @@ a {
 }
 
 .gallery-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.gallery-caption {
+  font-size: 1.1rem;
+  font-weight: 200;
+  margin-top: 1rem;
+  text-align: center;
+  color: #fff; /* Adjust text color as needed */
 }
 
 .gallery img {
