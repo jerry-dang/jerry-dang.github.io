@@ -396,6 +396,11 @@ body {
   margin-top: 10px;
 }
 
+.experience-icon-trader {
+  height: 40%;
+  /* margin-top: 10px; */
+}
+
 .experience-description-title {
   color: white;
 }
