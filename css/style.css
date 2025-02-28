@@ -397,8 +397,8 @@ body {
 }
 
 .experience-icon-trader {
-  height: 40%;
-  /* margin-top: 10px; */
+  margin-top: 1rem;
+  height: 30px;
 }
 
 .experience-description-title {
