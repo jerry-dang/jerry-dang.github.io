@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     TITLE
                 </p>
                 <p class="project-content-title-text2">
-                    Splitify - App for Splitting Bills <strong>(In-Progress)<strong>
+                    BSplit - App for Splitting Bills <strong>(In-Progress)<strong>
                 </p>
             </div>
             <div class="project-content-description">
@@ -309,10 +309,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     getting your money back is a guarantee!
                 </p>
                 <p class="project-content-description-text2">
-                    As this project is in-progress, there is no detailed drescription of it yet. However, I am planning on using AWS 
-                    and SQL for the database, Express.js for the backend, and Flutter for the frontend framework which will be integrated 
-                    with iOS and Android devices. As for the caviat, I want to tap in to the Interac API to provide a smoother experience 
-                    when requesting money back from other users and currently also learning about Dart!
+                    A web application deployed on AWS using an EC2 instance with a PostgreSQL database in RDS. Using Vite, React, and Typescript for frontend development. As for the caviat, I want to tap in to the Interac API to provide a smoother experience 
+                    when requesting money back from other users.
                 </p>
             </div>
             <div class="project-content-skills">
@@ -320,13 +318,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     SKILLS
                 </p>
                 <div class="project-content-skills-container">
-                    <div class="project-content-skills-item">
-                        <a href="https://flutter.dev/">
-                            <p class="project-content-skills-text2">
-                                Flutter
-                            </p>
-                        </a>
-                    </div>
                     <div class="project-content-skills-item">
                         <a href = "https://expressjs.com/">
                             <p class="project-content-skills-text2">
@@ -355,26 +346,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             </p>
                         </a>
                     </div>
-                    <div class="project-content-skills-item-typescript">
-                        <a href="https://dart.dev/">
-                            <p class="project-content-skills-text2">
-                                Dart
-                            </p>
-                        </a>
-                    </div>
                 </div>
             </div>
             <div class="project-content-links">
                 <p class="project-content-links-text">
                     LINKS
                 </p>
-                <div class="project-content-links-container">
-                    <div class="project-content-links-item">
-                        <a href="https://github.com/splitify-app/splitify">
-                            <img src="./img/github-icon.png" alt="GitHub" class="link-icon">
-                        </a>
-                    </div>
-                </div>
             </div>
         `,
     chess: `
